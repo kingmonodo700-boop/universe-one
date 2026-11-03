@@ -1,0 +1,1062 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <title>UNIVERSE ONE - Le savoir sans frontières</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #071426;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    body > header {
+  padding: 25px 15px;
+  border-bottom: 1px solid #163957;
+    }
+
+    .logo {
+      color: #20aaff;
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .slogan {
+      color: #a9c5df;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    main {
+      max-width: 500px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    h1 {
+      color: #20aaff;
+      font-size: 32px;
+    }
+
+    .description {
+      color: #b6c9dc;
+      line-height: 1.6;
+    }
+
+    select {
+      width: 100%;
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 12px;
+      background: #102b46;
+      color: white;
+      border: 1px solid #258bd0;
+      font-size: 16px;
+    }
+
+    .microphone {
+      width: 110px;
+      height: 110px;
+      margin: 35px auto 15px;
+      border-radius: 50%;
+      background: #087ac4;
+      border: 4px solid #42c5ff;
+      color: white;
+      font-size: 45px;
+      cursor: pointer;
+    }
+
+    .microphone:active {
+      transform: scale(0.95);
+    }
+
+    #status {
+      color: #50c9ff;
+      margin: 15px 0;
+      min-height: 25px;
+    }
+
+    #question, #answer {
+      background: #102b46;
+      border: 1px solid #1d527c;
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 15px;
+      text-align: left;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      color: #7894ad;
+      font-size: 12px;
+      padding: 25px;
+    }
+#universe-home {
+  margin-bottom: 35px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #102b46, #123d60);
+  border: 1px solid #258bd0;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 18px 0;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.2s;
+}
+#connect-chat {
+  margin-top: 25px;
+  padding: 18px;
+  background: #102b46;
+  border: 1px solid #258bd0;
+  border-radius: 18px;
+  text-align: left;
+}
+
+#connect-chat h2 {
+  color: #20aaff;
+  text-align: center;
+}
+
+#connect-messages {
+  min-height: 150px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 12px;
+  background: #071426;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow-wrap: anywhere;
+}
+
+#connect-message {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #258bd0;
+  background: #071426;
+  color: white;
+  font-size: 16px;
+}
+
+#connect-envoyer {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #087ac4;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.feature-card:active {
+  transform: scale(0.97);
+}
+
+.feature-card h2 {
+  color: #20aaff;
+  margin-top: 0;
+}
+
+.feature-card p {
+  color: #b6c9dc;
+  line-height: 1.5;
+}
+/* UNIVERSE ONE - DESIGN IMMERSIF */
+
+body {
+  background:
+    radial-gradient(ellipse at 50% 0%, #173d70 0%, transparent 55%),
+    linear-gradient(160deg, #030814, #071426 55%, #100d28);
+  background-attachment: fixed;
+}
+
+header {
+  background: rgba(5, 15, 32, 0.75);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(60, 160, 255, 0.2);
+}
+
+#universe-home {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-top: 45px;
+}
+
+#universe-home::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #087ac4;
+  filter: blur(110px);
+  opacity: 0.25;
+  z-index: -1;
+}
+
+#universe-home > * {
+  position: relative;
+}
+
+#universe-home h1 {
+  font-size: 34px;
+  line-height: 1.25;
+  text-shadow: 0 0 25px rgba(32, 170, 255, 0.4);
+}
+
+.feature-card {
+  background: linear-gradient(
+    135deg,
+    rgba(25, 57, 94, 0.85),
+    rgba(12, 24, 48, 0.95)
+  );
+  border: 1px solid rgba(75, 175, 255, 0.35);
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.feature-card:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 25px rgba(32, 170, 255, 0.25);
+}
+  /* UNIVERS ONE - PLANETE IMMERSIVE */
+
+.universe-hero {
+  padding: 25px 5px;
+  margin-bottom: 35px;
+  animation: universe-appear 1.2s ease both;
+}
+
+.universe-orb {
+  width: 155px;
+  height: 155px;
+  margin: 15px auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 85px;
+  background: radial-gradient(
+    circle at 35% 30%,
+    #65d7ff,
+    #087ac4 45%,
+    #071426 75%
+  );
+  box-shadow:
+    0 0 25px #087ac4,
+    0 0 65px rgba(32, 170, 255, 0.5),
+    inset -15px -15px 30px #030814;
+  animation: orb-float 4s ease-in-out infinite;
+}
+
+.universe-label {
+  color: #65d7ff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.universe-hero h1 {
+  font-size: 32px;
+  line-height: 1.35;
+}
+
+@keyframes orb-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes universe-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+.universe-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+  margin: 35px auto;
+  max-width: 380px;
+}
+
+.universe-logo {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  border: 3px solid #42C7FF;
+  background-image: url("universe-logos.png");
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 25px rgba(40, 160, 255, .45);
+  cursor: pointer;
+  transition: transform .25s;
+}
+
+.universe-logo:active {
+  transform: scale(.92);
+}
+
+.logo-planete {
+  background-position: left top;
+}
+
+.logo-ai {
+  background-position: right top;
+}
+
+.logo-reseau {
+  background-position: left bottom;
+}
+
+.logo-amis {
+  background-position: right bottom;
+}
+
+/* LOGOS UNIVERSE ONE */
+
+.universe-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+  max-width: 380px;
+  margin: 35px auto;
+}
+
+.universe-logo {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  border: 3px solid #42c7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  background: radial-gradient(circle, #173e68, #071426);
+  background-image: none;
+  box-shadow: 0 0 25px #087ac4;
+  cursor: pointer;
+  transition: transform .25s;
+}
+
+.universe-logo:active {
+  transform: scale(.90);
+}
+
+.logo-planete::before {
+  content: "🌍";
+}
+
+.logo-ai::before {
+  content: "🤖";
+}
+
+.logo-reseau::before {
+  content: "🌐";
+}
+
+.logo-amis::before {
+  content: "👥";
+}
+/* ACCUEIL PHOTO UNIVERSE ONE */
+#universe-home {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 10, 25, 0.20),
+      rgba(3, 10, 25, 0.88)
+    ),
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=85")
+    center / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+ /* TITRE PHOTO UNIVERSE ONE */
+.universe-photo-title {
+  text-align: center;
+  padding: 65px 15px 30px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.universe-photo-title p {
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #9bdcff;
+  font-weight: bold;
+}
+
+.universe-photo-title h1 {
+  font-size: clamp(30px, 8vw, 48px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 12px 0;
+  text-shadow: 0 0 25px #168cff;
+}
+
+.universe-photo-title span {
+  font-size: 14px;
+  color: #dceaff;
+  letter-spacing: 2px;
+}
+ /* BOUTONS PHOTO PREMIUM UNIVERSE ONE */
+
+.universe-logo {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #65caff;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 22px rgba(0, 160, 255, 0.65);
+  position: relative;
+}
+
+.universe-logo::before {
+  content: none !important;
+}
+
+.logo-planete {
+  background-image: url("https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=500");
+}
+
+.logo-ai {
+  background-image: url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500");
+}
+
+.logo-reseau {
+  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500");
+}
+
+.logo-amis {
+  background-image: url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500");
+}
+
+.universe-logo:active {
+  transform: scale(0.94);
+}
+ /* EFFET LUXE UNIVERSE ONE */
+
+.universe-logo {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  outline: 1px solid rgba(255,255,255,0.35);
+  outline-offset: 4px;
+}
+
+.universe-logo:hover {
+  transform: scale(1.07);
+  box-shadow:
+    0 0 20px #00aaff,
+    0 0 45px rgba(0,170,255,0.65);
+}
+  /* NOMS DES PILIERS */
+.universe-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.universe-item span {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #168cff;
+}
+  
+/* ===== ONE AI : DESIGN PREMIUM ===== */
+
+.one-ai-app {
+  min-height: 100vh;
+  background: #101522;
+  color: #f5f7ff;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.one-ai-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  border-bottom: 1px solid #293144;
+  background: #151c2b;
+}
+
+.one-ai-header h1 {
+  margin: 0;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.one-ai-header p {
+  margin: 5px 0 0;
+  color: #aab5ca;
+  font-size: 12px;
+}
+
+.one-ai-back {
+  background: #273248;
+  color: white;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+.one-ai-main {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+  padding: 25px 18px;
+  flex: 1;
+}
+
+.one-ai-welcome {
+  text-align: center;
+  margin: 55px 0 35px;
+}
+
+.one-ai-symbol {
+  font-size: 45px;
+  color: #71c9ff;
+}
+
+.one-ai-welcome h2 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.one-ai-welcome p {
+  color: #aab5ca;
+  line-height: 1.6;
+}
+
+.one-ai-suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.one-ai-suggestions button {
+  background: #1c2638;
+  border: 1px solid #34435c;
+  color: white;
+  border-radius: 15px;
+  padding: 17px 12px;
+  text-align: left;
+  min-height: 75px;
+}
+
+.one-ai-suggestions button span {
+  color: #70caff;
+  margin-right: 7px;
+}
+
+#one-ai-conversation {
+  margin-top: 25px;
+}
+
+#question, #answer {
+  background: #1c2638;
+  border: 1px solid #34435c;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.one-ai-bottom {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.one-ai-bottom select {
+  background: #1c2638;
+  color: white;
+  border: 1px solid #34435c;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.one-ai-composer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1c2638;
+  border: 1px solid #465570;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.one-ai-composer textarea {
+  display: block;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  resize: vertical;
+  background: #1c2638;
+  color: #ffffff;
+  border: 1px solid #465570;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  padding: 13px;
+}
+
+.one-ai-composer textarea::placeholder {
+  color: #aab5ca;
+  opacity: 1;
+}
+
+
+.one-ai-composer button {
+  border: none;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  background: #238bd0;
+  color: white;
+  font-size: 20px;
+}
+
+.one-ai-disclaimer,
+#status {
+  text-align: center;
+  color: #8996ad;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+@media (max-width: 420px) {
+  .one-ai-welcome h2 {
+    font-size: 21px;
+  }
+
+  .one-ai-suggestions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CORRECTION AFFICHAGE DES BOUTONS ONE AI */
+
+.one-ai-app button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  visibility: visible;
+}
+
+.one-ai-composer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: #1c2638;
+  border: 1px solid #465570;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.one-ai-composer textarea {
+  display: block;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  color: white;
+  background: #273248;
+  border: 1px solid #465570;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.one-ai-composer textarea::placeholder {
+  color: #aab5ca;
+}
+
+.one-ai-composer #one-ai-send {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: #238bd0;
+  color: white;
+  font-size: 24px;
+}
+
+.one-ai-composer .microphone {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  margin: 0;
+  border: none;
+  font-size: 20px;
+}
+/* BARRE DE SAISIE ONE AI */
+.one-ai-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 15px 18px 25px;
+  background: #151c2b;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+}
+
+.one-ai-bottom select {
+  width: 100%;
+  margin: 0;
+}
+
+.one-ai-bottom #status,
+.one-ai-bottom .one-ai-disclaimer {
+  color: #aab5ca;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+  </style>
+</head>
+
+<body>
+
+<section id="one-ai" hidden>
+
+  <div class="one-ai-app">
+
+    <header class="one-ai-header">
+      <button onclick="retourAccueil()" class="one-ai-back">
+        <!-- EN-TÊTE UNIQUE ONE AI -->
+
+<header class="one-ai-header">
+  <button onclick="retourAccueil()" class="one-ai-back">
+    ←
+  </button>
+
+  <div>
+    <h1>ONE AI</h1>
+    <p>Votre intelligence, sans frontières.</p>
+  </div>
+</header>
+
+<main class="one-ai-main">
+
+  <div class="one-ai-welcome">
+    <div class="one-ai-symbol">✦</div>
+
+    <h2>Que souhaitez-vous savoir ?</h2>
+
+    <p>
+      Posez vos questions, découvrez de nouvelles idées
+      et explorez toutes les possibilités du savoir.
+    </p>
+  </div>
+
+  <div class="one-ai-suggestions">
+
+    <button onclick="document.getElementById('one-ai-input').value='Explique-moi un sujet simplement.'">
+      <span>✧</span>
+      Explique-moi un sujet
+    </button>
+
+    <button onclick="document.getElementById('one-ai-input').value='Aide-moi à apprendre quelque chose de nouveau.'">
+      <span>◎</span>
+      Apprendre quelque chose
+    </button>
+
+    <button onclick="document.getElementById('one-ai-input').value='Aide-moi à trouver une idée de projet.'">
+      <span>◇</span>
+      Trouver une idée
+    </button>
+
+    <button onclick="document.getElementById('one-ai-input').value='Aide-moi à écrire un texte.'">
+      <span>✎</span>
+      Écrire un texte
+    </button>
+
+  </div>
+</main>
+      </div>
+
+      <div id="one-ai-conversation">
+
+        <div id="question">
+          Ta question apparaîtra ici.
+        </div>
+
+        <div id="answer">
+          Les réponses de ONE AI apparaîtront ici.
+        </div>
+
+      </div>
+
+    </main>
+
+    <div class="one-ai-bottom">
+
+      <select id="language">
+        <option value="fr-FR">🇫🇷 Français</option>
+        <option value="en-US">🇬🇧 English</option>
+        <option value="mos">🇧🇫 Mooré</option>
+        <option value="dyu">🇧🇫 Dioula</option>
+        <option value="es-ES">🇪🇸 Espagnol</option>
+        <option value="pt-BR">🇧🇷 Portugais</option>
+        <option value="ar-SA">🇸🇦 Arabe</option>
+        <option value="zh-CN">🇨🇳 Chinois mandarin</option>
+        <option value="hi-IN">🇮🇳 Hindi</option>
+        <option value="de-DE">🇩🇪 Allemand</option>
+        <option value="it-IT">🇮🇹 Italien</option>
+        <option value="ru-RU">🇷🇺 Russe</option>
+        <option value="ja-JP">🇯🇵 Japonais</option>
+        <option value="ko-KR">🇰🇷 Coréen</option>
+      </select>
+
+      <div class="one-ai-composer">
+
+        <textarea
+          id="one-ai-input"
+          placeholder="Posez votre question à ONE AI..."
+          rows="1"
+        ></textarea>
+
+        <button class="microphone" id="microphone" aria-label="Parler">
+          🎙️
+        </button>
+
+        <button id="one-ai-send" aria-label="Envoyer">
+          ↑
+        </button>
+
+      </div>
+
+      <p id="status">
+        ONE AI est prêt à vous écouter.
+      </p>
+
+      <p class="one-ai-disclaimer">
+        ONE AI peut parfois se tromper. Vérifiez les informations importantes.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="universe-home">
+
+<header>
+  <div class="logo">UNIVERSE ONE</div>
+  <div class="slogan">LE SAVOIR SANS FRONTIÈRES</div>
+</header>
+  <div class="universe-photo-title">
+  <p>BIENVENUE DANS</p>
+  <h1>UNIVERSE ONE</h1>
+  <span>Le savoir sans frontières</span>
+</div>
+  <div class="universe-logo-grid">
+
+    <div class="universe-item">
+  <button class="universe-logo logo-planete"
+    onclick="retourAccueil()" aria-label="Accueil">
+  </button>
+  <span>ACCUEIL</span>
+    </div>
+
+    <div class="universe-item">
+  <button class="universe-logo logo-ai"
+    onclick="ouvrirPilier('one-ai')" aria-label="ONE AI">
+  </button>
+  <span>ONE AI</span>
+    </div>
+
+    <div class="universe-item">
+  <button class="universe-logo logo-reseau"
+    onclick="ouvrirPilier('one-connect')" aria-label="ONE CONNECT">
+  </button>
+  <span>ONE CONNECT</span>
+    </div>
+
+    <div class="universe-item">
+  <button class="universe-logo logo-amis"
+    onclick="ouvrirPilier('one-connect')" aria-label="Amis">
+  </button>
+  <span>AMIS</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+  UNIVERSE ONE © 2026
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+// CONNEXION SUPABASE - UNIVERSE ONE
+
+const SUPABASE_URL = "https://rerngccphucctslzjcaj.supabase.co";
+
+const SUPABASE_PUBLISHABLE_KEY = "COLLE_TA_CLE_PUBLIQUE_ICI";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
+
+// ONE CONNECT : ENVOI DES MESSAGES
+ // NAVIGATION UNIVERSE ONE
+
+// NAVIGATION UNIVERSE ONE
+function ouvrirPilier(pilier) {
+  const accueil = document.getElementById("universe-home");
+  const ai = document.getElementById("one-ai");
+  const connect = document.getElementById("one-connect");
+
+  if (accueil) accueil.hidden = true;
+  if (ai) ai.hidden = true;
+  if (connect) connect.hidden = true;
+
+  const destination = document.getElementById(pilier);
+
+  if (destination) {
+    destination.hidden = false;
+  }
+}
+
+function retourAccueil() {
+  const accueil = document.getElementById("universe-home");
+  const ai = document.getElementById("one-ai");
+  const connect = document.getElementById("one-connect");
+
+  if (ai) ai.hidden = true;
+  if (connect) connect.hidden = true;
+  if (accueil) accueil.hidden = false;
+}
+
+
+// ONE AI : PREPARATION DE L'ENVOI
+
+const boutonEnvoyerAI = document.getElementById("one-ai-send");
+const champQuestionAI = document.getElementById("one-ai-input");
+const reponseAI = document.getElementById("answer");
+const statutAI = document.getElementById("status");
+
+if (boutonEnvoyerAI && champQuestionAI) {
+  boutonEnvoyerAI.addEventListener("click", function () {
+    const question = champQuestionAI.value.trim();
+
+    if (!question) {
+      statutAI.textContent = "Écris d'abord une question.";
+      return;
+    }
+
+    document.getElementById("question").textContent = question;
+    reponseAI.textContent =
+      "Ta question est prête. Le moteur d'intelligence artificielle doit encore être connecté.";
+
+    champQuestionAI.value = "";
+    statutAI.textContent = "Question enregistrée.";
+  });
+}
+
+  // MICROPHONE ONE AI
+
+const boutonMicro = document.getElementById("microphone");
+const statutMicro = document.getElementById("status");
+const zoneQuestion = document.getElementById("question");
+const choixLangue = document.getElementById("language");
+
+const Reconnaissance =
+  window.SpeechRecognition || window.webkitSpeechRecognition;
+
+if (Reconnaissance) {
+  const reconnaissance = new Reconnaissance();
+
+  reconnaissance.continuous = false;
+  reconnaissance.interimResults = false;
+
+  reconnaissance.onstart = function () {
+    statutMicro.textContent = "🎙️ Je t'écoute...";
+  };
+
+  reconnaissance.onresult = function (event) {
+    const texte = event.results[0][0].transcript;
+    zoneQuestion.textContent = texte;
+    statutMicro.textContent = "Voix enregistrée avec succès.";
+  };
+
+  reconnaissance.onerror = function (event) {
+    statutMicro.textContent =
+      "Erreur du microphone : " + event.error;
+  };
+
+  reconnaissance.onend = function () {
+    boutonMicro.textContent = "🎙️";
+  };
+
+  boutonMicro.addEventListener("click", function () {
+    reconnaissance.lang = choixLangue.value;
+    boutonMicro.textContent = "⏹️";
+    reconnaissance.start();
+  });
+
+} else {
+  statutMicro.textContent =
+    "La reconnaissance vocale n'est pas disponible dans ce navigateur.";
+}
+</script>
+</body>
+</html>
